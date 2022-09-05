@@ -54,11 +54,14 @@
     <Compile Include="Capitulos\Capitulo_2\Cenarios\Procurar.cs" />
     <Compile Include="Contextos\Contextos.cs" />
     <Compile Include="Finais\Finalcovarde.cs" />
+    <Compile Include="Utils\AssetsSerialization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Musicas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

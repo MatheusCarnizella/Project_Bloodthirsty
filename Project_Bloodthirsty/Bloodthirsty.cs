@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Project_Bloodthirsty.Capitulos;
 using Project_Bloodthirsty.Capitulos.Capitulo_2;
 using Project_Bloodthirsty.Contexto;
+using Project_Bloodthirsty.Utils;
 
 namespace Project_Bloodthirsty
 {
@@ -14,7 +15,14 @@ namespace Project_Bloodthirsty
         enum MENU { New = 1, Load, Options}        
         static public void Main()
         {
-            Console.Clear();   
+
+            #region DEBUGGING
+            AssetsSerialization.LoadAllAssets_SFX();
+            AssetsSerialization.GetSoundPlayerSFX("TIC TAC");
+            //string path = AssetsSerialization.GetRootDirectory(AssetsSerialization.SFX_FOLDER);
+            #endregion
+
+            //Console.Clear();   
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                                        ATENÇÃO");
             Console.WriteLine("                                                 ");
