@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Project_Bloodthirsty.Capitulos;
 using Project_Bloodthirsty.Capitulos.Capitulo_2;
 using Project_Bloodthirsty.Contexto;
-using Project_Bloodthirsty.Utils;
+using Project_Bloodthirsty.SFXUtils;
 
 namespace Project_Bloodthirsty
 {
@@ -16,10 +16,8 @@ namespace Project_Bloodthirsty
         static public void Main()
         {
 
-            #region DEBUGGING
-            AssetsSerialization.LoadAllAssets_SFX();
-            AssetsSerialization.GetSoundPlayerSFX("TIC TAC");
-            //string path = AssetsSerialization.GetRootDirectory(AssetsSerialization.SFX_FOLDER);
+            #region ASSETS_LOADING
+            SFXUtils.SFXUtility.LoadAllAssets_SFX(false);
             #endregion
 
             //Console.Clear();   

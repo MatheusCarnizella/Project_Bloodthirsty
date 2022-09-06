@@ -1,6 +1,7 @@
 ﻿using Project_Bloodthirsty.Capitulos.Capitulo.Cenarios;
 using Project_Bloodthirsty.Capitulos.Capitulo_2;
 using Project_Bloodthirsty.Finais;
+using Project_Bloodthirsty.SFXUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,26 +13,20 @@ namespace Project_Bloodthirsty.Capitulos
 {
     internal class Capitulo1
     {
-        static SoundPlayer Som = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\FUNDO MUSICAL WAV.wav");
-        static SoundPlayer Som2 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\FUNDO AMBIENTE.wav");
-        static SoundPlayer Som3 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\SOM DE PASSOS.wav");
-        static SoundPlayer Porta = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\PORTA.wav");
-        static SoundPlayer Vidro = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\VIDRO.wav");
-        static SoundPlayer Grito1 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\GRITO ASSOMBRADO.wav");
-        static SoundPlayer AbrirPorta = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\PORTA ABRINDO SEM CHAVE.wav");
-        static SoundPlayer ChavePorta = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\PORTA ABRINDO COM CHAVE.wav");
+
         static public void C1()
         {
 
             Console.Clear();
             Console.WriteLine("                                                                                         ");
             Console.WriteLine("                                             CAPÍTULO 1: MANSÃO GELADA ( 20:01 )");
-            Porta.PlaySync();
-
+            //Porta.PlaySync();
+            SFXUtility.GetSpecificSoundPlayerSFX("Porta").PlaySync();
 
 
             Console.Clear();
-            Som2.PlayLooping();
+            //FundoAmbiente.PlayLooping();
+            SFXUtility.GetSpecificSoundPlayerSFX("FundoAmbiente").PlayLooping();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                               - Kevin - Então essa é a mansão!!?? Não me parece grandes coisas.");
             Console.WriteLine("                                                                                         (PRESSIONE ENTER)");
@@ -64,7 +59,8 @@ namespace Project_Bloodthirsty.Capitulos
         static public void C1_1()
         {
             Console.Clear();
-            Som2.PlayLooping();
+            //FundoAmbiente.PlayLooping();
+            SFXUtility.GetSpecificSoundPlayerSFX("FundoAmbiente").PlayLooping();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                                          ( 20:15 )");
             Console.WriteLine("                                                     ");
@@ -286,7 +282,8 @@ namespace Project_Bloodthirsty.Capitulos
             Console.ReadKey();
 
             Console.Clear();
-            Grito1.PlaySync();
+            //Grito1.PlaySync();
+            SFXUtility.GetSpecificSoundPlayerSFX("GritoAssombrado").PlaySync();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                                          ( 20:35 )");
             Console.WriteLine("                                                     ");
