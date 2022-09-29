@@ -4,17 +4,16 @@ using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
+using Project_Bloodthirsty.SFXUtils;
 
 namespace Project_Bloodthirsty.Contexto
 {
     internal class Contextos
     {
-        static SoundPlayer Som = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\FUNDO MUSICAL WAV.wav");
-        static SoundPlayer Som2 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\FUNDO AMBIENTE.wav");
-        static SoundPlayer Som3 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\SOM DE PASSOS.wav");
         static public void Contexto()
         {
-            Som.Play();
+            //FundoMusical.Play();
+            SFXUtility.GetSpecificSoundPlayerSFX("FundoMusical").Play();
             Console.Clear();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                            Você (Kevin) descobre sobre uma mansão antiga supostamente assombrada.");

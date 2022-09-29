@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Project_Bloodthirsty.Capitulos;
 using Project_Bloodthirsty.Capitulos.Capitulo_2;
 using Project_Bloodthirsty.Contexto;
+using Project_Bloodthirsty.SFXUtils;
 
 namespace Project_Bloodthirsty
 {
@@ -14,7 +15,12 @@ namespace Project_Bloodthirsty
         enum MENU { New = 1, Load, Options}        
         static public void Main()
         {
-            Console.Clear();   
+
+            #region ASSETS_LOADING
+            SFXUtils.SFXUtility.LoadAllAssets_SFX(false);
+            #endregion
+
+            //Console.Clear();   
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                                        ATENÇÃO");
             Console.WriteLine("                                                 ");

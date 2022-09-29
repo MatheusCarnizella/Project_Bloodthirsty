@@ -1,4 +1,5 @@
 ﻿using Project_Bloodthirsty.Capitulos.Capitulo_2.Cenarios;
+using Project_Bloodthirsty.SFXUtils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,23 +11,14 @@ namespace Project_Bloodthirsty.Capitulos.Capitulo_2
 {
     internal class Capitulo2
     {
-        static SoundPlayer Som = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\FUNDO MUSICAL WAV.wav");
-        static SoundPlayer Som2 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\FUNDO AMBIENTE.wav");
-        static SoundPlayer Som3 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\SOM DE PASSOS.wav");
-        static SoundPlayer Porta = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\PORTA.wav");
-        static SoundPlayer Vidro = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\VIDRO.wav");
-        static SoundPlayer Grito1 = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\GRITO ASSOMBRADO.wav");
-        static SoundPlayer Relogio = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\Relogio.wav");
-        static SoundPlayer TicTac = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\TIC TAC.wav");
-        static SoundPlayer Correndo = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\CORRENDO.wav");
-        static SoundPlayer AbrirPorta = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\PORTA ABRINDO SEM CHAVE.wav");
-        static SoundPlayer ChavePorta = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\PORTA ABRINDO COM CHAVE.wav");
+
         static public void C2()
         {
             Console.Clear();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                           CAPITULO 2: GRITO  ( 20:35 )");
-            TicTac.PlaySync();
+            //TicTac.PlaySync();
+            SFXUtility.GetSpecificSoundPlayerSFX("TicTac").PlaySync();
 
 
             Console.WriteLine("                                                     ");
@@ -35,13 +27,15 @@ namespace Project_Bloodthirsty.Capitulos.Capitulo_2
             Console.ReadKey();
             Console.Clear();
 
-            Correndo.PlaySync();
+            //Correndo.PlaySync();
+            SFXUtility.GetSpecificSoundPlayerSFX("Correndo").PlaySync();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                                 (  20:36  )");
             Console.WriteLine("                                                                                         (PRESSIONE ENTER)");
             Console.ReadKey();
 
-            Som2.Play();
+            //Som2.Play();
+            SFXUtility.GetSpecificSoundPlayerSFX("FundoAmbiente").Play();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                        - Kevin - Mas que porr* foi essa?");
             Console.WriteLine("                                                                                         (PRESSIONE ENTER)");

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Bloodthirsty.SFXUtils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Media;
@@ -9,11 +10,11 @@ namespace Project_Bloodthirsty.Finais
 {
     internal class Finalcovarde
     {
-        static SoundPlayer Melancolia = new SoundPlayer(@"C:\Users\Voiidde\Desktop\Git_projects\VS PROJECTS\Project_Bloodthirsty\Project_Bloodthirsty\Musicas\MELANCOLIA.wav"); 
         static public void Finalfuga()
         {
             Console.Clear();
-            Melancolia.Play();
+            //Melancolia.Play();
+            SFXUtility.GetSpecificSoundPlayerSFX("Melancolia").Play();
             Console.WriteLine("                                                     ");
             Console.WriteLine("                                                  FINAL DO COVARDE");
             Console.WriteLine("                                                     ");

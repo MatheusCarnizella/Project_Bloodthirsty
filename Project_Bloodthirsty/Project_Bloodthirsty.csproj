@@ -54,7 +54,9 @@
     <Compile Include="Capitulos\Capitulo_2\Cenarios\Procurar.cs" />
     <Compile Include="Contextos\Contextos.cs" />
     <Compile Include="Finais\Finalcovarde.cs" />
+    <Compile Include="Utils\SFXUtils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
